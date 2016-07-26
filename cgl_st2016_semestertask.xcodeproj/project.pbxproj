@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		117D90CF1D4790AE00BBCBBB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90CE1D4790AE00BBCBBB /* main.cpp */; };
+		117D90D11D4790BF00BBCBBB /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117D90D01D4790BF00BBCBBB /* SDL2.framework */; };
+		117D90D51D47910900BBCBBB /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90D31D47910900BBCBBB /* System.cpp */; };
+		117D90D81D47AFD100BBCBBB /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90D61D47AFD100BBCBBB /* GameObject.cpp */; };
+		117D90DF1D47B3DD00BBCBBB /* CommandMove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90DD1D47B3DD00BBCBBB /* CommandMove.cpp */; };
+		117D90E21D47B52F00BBCBBB /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90E01D47B52F00BBCBBB /* Component.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		117D90BA1D47908E00BBCBBB /* cgl_st2016_semestertask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cgl_st2016_semestertask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		117D90C81D47908E00BBCBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117D90CE1D4790AE00BBCBBB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		117D90D01D4790BF00BBCBBB /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
+		117D90D31D47910900BBCBBB /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = System.cpp; sourceTree = "<group>"; };
+		117D90D41D47910900BBCBBB /* System.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = System.hpp; sourceTree = "<group>"; };
+		117D90D61D47AFD100BBCBBB /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		117D90D71D47AFD100BBCBBB /* GameObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameObject.hpp; sourceTree = "<group>"; };
+		117D90DA1D47B34700BBCBBB /* ICommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ICommand.hpp; sourceTree = "<group>"; };
+		117D90DD1D47B3DD00BBCBBB /* CommandMove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandMove.cpp; sourceTree = "<group>"; };
+		117D90DE1D47B3DD00BBCBBB /* CommandMove.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommandMove.hpp; sourceTree = "<group>"; };
+		117D90E01D47B52F00BBCBBB /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
+		117D90E11D47B52F00BBCBBB /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		117D90B71D47908E00BBCBBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117D90D11D4790BF00BBCBBB /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		117D90B11D47908E00BBCBBB = {
+			isa = PBXGroup;
+			children = (
+				117D90BC1D47908E00BBCBBB /* cgl_st2016_semestertask */,
+				117D90BB1D47908E00BBCBBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		117D90BB1D47908E00BBCBBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				117D90BA1D47908E00BBCBBB /* cgl_st2016_semestertask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		117D90BC1D47908E00BBCBBB /* cgl_st2016_semestertask */ = {
+			isa = PBXGroup;
+			children = (
+				117D90C81D47908E00BBCBBB /* Info.plist */,
+				117D90C01D47908E00BBCBBB /* Supporting Files */,
+			);
+			path = cgl_st2016_semestertask;
+			sourceTree = "<group>";
+		};
+		117D90C01D47908E00BBCBBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				117D90D21D4790C400BBCBBB /* Frameworks */,
+				117D90CE1D4790AE00BBCBBB /* main.cpp */,
+				117D90DA1D47B34700BBCBBB /* ICommand.hpp */,
+				117D90E01D47B52F00BBCBBB /* Component.cpp */,
+				117D90E11D47B52F00BBCBBB /* Component.hpp */,
+				117D90DC1D47B3CF00BBCBBB /* Commands */,
+				117D90D31D47910900BBCBBB /* System.cpp */,
+				117D90D61D47AFD100BBCBBB /* GameObject.cpp */,
+				117D90D71D47AFD100BBCBBB /* GameObject.hpp */,
+				117D90D41D47910900BBCBBB /* System.hpp */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		117D90D21D4790C400BBCBBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117D90D01D4790BF00BBCBBB /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		117D90DC1D47B3CF00BBCBBB /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				117D90DD1D47B3DD00BBCBBB /* CommandMove.cpp */,
+				117D90DE1D47B3DD00BBCBBB /* CommandMove.hpp */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		117D90B91D47908E00BBCBBB /* cgl_st2016_semestertask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 117D90CB1D47908E00BBCBBB /* Build configuration list for PBXNativeTarget "cgl_st2016_semestertask" */;
+			buildPhases = (
+				117D90B61D47908E00BBCBBB /* Sources */,
+				117D90B71D47908E00BBCBBB /* Frameworks */,
+				117D90B81D47908E00BBCBBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cgl_st2016_semestertask;
+			productName = cgl_st2016_semestertask;
+			productReference = 117D90BA1D47908E00BBCBBB /* cgl_st2016_semestertask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		117D90B21D47908E00BBCBBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Utz Stauder";
+				TargetAttributes = {
+					117D90B91D47908E00BBCBBB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 117D90B51D47908E00BBCBBB /* Build configuration list for PBXProject "cgl_st2016_semestertask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 117D90B11D47908E00BBCBBB;
+			productRefGroup = 117D90BB1D47908E00BBCBBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				117D90B91D47908E00BBCBBB /* cgl_st2016_semestertask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		117D90B81D47908E00BBCBBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		117D90B61D47908E00BBCBBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117D90D51D47910900BBCBBB /* System.cpp in Sources */,
+				117D90CF1D4790AE00BBCBBB /* main.cpp in Sources */,
+				117D90DF1D47B3DD00BBCBBB /* CommandMove.cpp in Sources */,
+				117D90D81D47AFD100BBCBBB /* GameObject.cpp in Sources */,
+				117D90E21D47B52F00BBCBBB /* Component.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		117D90C91D47908E00BBCBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		117D90CA1D47908E00BBCBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		117D90CC1D47908E00BBCBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = cgl_st2016_semestertask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.cgl-st2016-semestertask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		117D90CD1D47908E00BBCBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = cgl_st2016_semestertask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.cgl-st2016-semestertask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		117D90B51D47908E00BBCBBB /* Build configuration list for PBXProject "cgl_st2016_semestertask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117D90C91D47908E00BBCBBB /* Debug */,
+				117D90CA1D47908E00BBCBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		117D90CB1D47908E00BBCBBB /* Build configuration list for PBXNativeTarget "cgl_st2016_semestertask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117D90CC1D47908E00BBCBBB /* Debug */,
+				117D90CD1D47908E00BBCBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 117D90B21D47908E00BBCBBB /* Project object */;
+}
