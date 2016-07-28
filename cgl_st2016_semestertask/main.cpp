@@ -14,7 +14,6 @@ const int WINDOW_HEIGHT = 720;
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    
     // initialize system
     System::Pointer system = make_shared<System>(WINDOW_WIDTH, WINDOW_HEIGHT);
     

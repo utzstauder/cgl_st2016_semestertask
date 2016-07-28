@@ -24,7 +24,7 @@ public:
     
     void ProcessEvents();
     void Update();
-    void Render(Uint32 normalizedStepBetweenFrames);
+    void Render(float normalizedStepBetweenFrames);
     
     void Run();
     void Shutdown();

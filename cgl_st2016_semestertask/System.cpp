@@ -38,7 +38,7 @@ void System::ProcessEvents(){
     SDL_Event event;
     
     while (SDL_PollEvent(&event)){
-        printf("SDL_Event: %u\n", event.type);
+        //printf("SDL_Event: %u\n", event.type);
         switch(event.type){
             case SDL_QUIT:{
                 running = false;
@@ -57,7 +57,7 @@ void System::Update(){
 }
 
 // normalizedStepBetweenFrames will vary from 0 (previous frame) to 0.99999999.. (just before the next frame) and is used for extrapolation
-void System::Render(Uint32 normalizedStepBetweenFrames){
+void System::Render(float normalizedStepBetweenFrames){
     // clear screen
     
     // show background
@@ -97,6 +97,7 @@ void System::Run(){
         }
         
         Render(lag / MS_PER_UPDATE);
+        printf("fps: %.0f; dt: %.3f\n", (1000.0f / elapsedTime), (elapsedTime / 1000.0f));
     }
 }
 

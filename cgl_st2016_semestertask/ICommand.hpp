@@ -13,8 +13,8 @@
 
 class ICommand{
 public:
-    virtual ~ICommand();
-    virtual void Execute();
+    virtual ~ICommand() {};
+    virtual void Execute() = 0;
 };
 
 #endif /* ICommand_hpp */

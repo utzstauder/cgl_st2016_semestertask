@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11495EE21D4A22F10003C67E /* IComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11495EE11D4A22F10003C67E /* IComponent.cpp */; };
 		117D90CF1D4790AE00BBCBBB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90CE1D4790AE00BBCBBB /* main.cpp */; };
 		117D90D11D4790BF00BBCBBB /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117D90D01D4790BF00BBCBBB /* SDL2.framework */; };
 		117D90D51D47910900BBCBBB /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90D31D47910900BBCBBB /* System.cpp */; };
 		117D90D81D47AFD100BBCBBB /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90D61D47AFD100BBCBBB /* GameObject.cpp */; };
 		117D90DF1D47B3DD00BBCBBB /* CommandMove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90DD1D47B3DD00BBCBBB /* CommandMove.cpp */; };
-		117D90E21D47B52F00BBCBBB /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117D90E01D47B52F00BBCBBB /* Component.cpp */; };
+		11D0DEA21D4A127F002DCF85 /* RendererComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11D0DEA01D4A127F002DCF85 /* RendererComponent.cpp */; };
+		11D0DEA51D4A13A6002DCF85 /* TransformComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11D0DEA31D4A13A6002DCF85 /* TransformComponent.cpp */; };
+		11D0DEA81D4A1417002DCF85 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11D0DEA61D4A1417002DCF85 /* Vector2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11495EE11D4A22F10003C67E /* IComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IComponent.cpp; sourceTree = "<group>"; };
 		117D90BA1D47908E00BBCBBB /* cgl_st2016_semestertask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cgl_st2016_semestertask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117D90C81D47908E00BBCBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		117D90CE1D4790AE00BBCBBB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -27,8 +31,13 @@
 		117D90DA1D47B34700BBCBBB /* ICommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ICommand.hpp; sourceTree = "<group>"; };
 		117D90DD1D47B3DD00BBCBBB /* CommandMove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandMove.cpp; sourceTree = "<group>"; };
 		117D90DE1D47B3DD00BBCBBB /* CommandMove.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommandMove.hpp; sourceTree = "<group>"; };
-		117D90E01D47B52F00BBCBBB /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
-		117D90E11D47B52F00BBCBBB /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
+		117D90E11D47B52F00BBCBBB /* IComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IComponent.hpp; sourceTree = "<group>"; };
+		11D0DEA01D4A127F002DCF85 /* RendererComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RendererComponent.cpp; sourceTree = "<group>"; };
+		11D0DEA11D4A127F002DCF85 /* RendererComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RendererComponent.hpp; sourceTree = "<group>"; };
+		11D0DEA31D4A13A6002DCF85 /* TransformComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformComponent.cpp; sourceTree = "<group>"; };
+		11D0DEA41D4A13A6002DCF85 /* TransformComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransformComponent.hpp; sourceTree = "<group>"; };
+		11D0DEA61D4A1417002DCF85 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		11D0DEA71D4A1417002DCF85 /* Vector2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +83,15 @@
 				117D90D21D4790C400BBCBBB /* Frameworks */,
 				117D90CE1D4790AE00BBCBBB /* main.cpp */,
 				117D90DA1D47B34700BBCBBB /* ICommand.hpp */,
-				117D90E01D47B52F00BBCBBB /* Component.cpp */,
-				117D90E11D47B52F00BBCBBB /* Component.hpp */,
+				117D90E11D47B52F00BBCBBB /* IComponent.hpp */,
+				11495EE11D4A22F10003C67E /* IComponent.cpp */,
+				11D0DEA61D4A1417002DCF85 /* Vector2.cpp */,
+				11D0DEA71D4A1417002DCF85 /* Vector2.hpp */,
+				11D0DE9F1D4A1257002DCF85 /* Components */,
 				117D90DC1D47B3CF00BBCBBB /* Commands */,
-				117D90D31D47910900BBCBBB /* System.cpp */,
 				117D90D61D47AFD100BBCBBB /* GameObject.cpp */,
 				117D90D71D47AFD100BBCBBB /* GameObject.hpp */,
+				117D90D31D47910900BBCBBB /* System.cpp */,
 				117D90D41D47910900BBCBBB /* System.hpp */,
 			);
 			name = "Supporting Files";
@@ -100,6 +112,17 @@
 				117D90DE1D47B3DD00BBCBBB /* CommandMove.hpp */,
 			);
 			name = Commands;
+			sourceTree = "<group>";
+		};
+		11D0DE9F1D4A1257002DCF85 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				11D0DEA01D4A127F002DCF85 /* RendererComponent.cpp */,
+				11D0DEA11D4A127F002DCF85 /* RendererComponent.hpp */,
+				11D0DEA31D4A13A6002DCF85 /* TransformComponent.cpp */,
+				11D0DEA41D4A13A6002DCF85 /* TransformComponent.hpp */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,11 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D0DEA51D4A13A6002DCF85 /* TransformComponent.cpp in Sources */,
+				11D0DEA81D4A1417002DCF85 /* Vector2.cpp in Sources */,
 				117D90D51D47910900BBCBBB /* System.cpp in Sources */,
+				11495EE21D4A22F10003C67E /* IComponent.cpp in Sources */,
 				117D90CF1D4790AE00BBCBBB /* main.cpp in Sources */,
 				117D90DF1D47B3DD00BBCBBB /* CommandMove.cpp in Sources */,
 				117D90D81D47AFD100BBCBBB /* GameObject.cpp in Sources */,
-				117D90E21D47B52F00BBCBBB /* Component.cpp in Sources */,
+				11D0DEA21D4A127F002DCF85 /* RendererComponent.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +336,7 @@
 				117D90CD1D47908E00BBCBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
