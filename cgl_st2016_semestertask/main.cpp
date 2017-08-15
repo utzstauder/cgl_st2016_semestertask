@@ -6,19 +6,22 @@
 //  Copyright © 2016 Utz Stauder. All rights reserved.
 //
 
-#include "System.hpp"
+#include "Server.hpp"
 
-const int WINDOW_WIDTH  = 1280;
-const int WINDOW_HEIGHT = 720;
+const int WINDOW_WIDTH  = 1024;
+const int WINDOW_HEIGHT = 576;
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     // initialize system
-    System::Pointer system = make_shared<System>(WINDOW_WIDTH, WINDOW_HEIGHT);
+    Server *server = new Server(WINDOW_WIDTH, WINDOW_HEIGHT);
     
     // run the game loop
-    system->Run();
+    server->Run();
+    
+    // clear memory
+    delete server;
     
     // quit the application
     return 0;

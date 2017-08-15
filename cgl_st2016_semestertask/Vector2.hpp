@@ -43,7 +43,7 @@ public:
     inline const bool    operator != (const Vector2 &v) { return ((x != v.x) || (y != v.y)); };
     inline const Vector2 operator +  (const Vector2 &v) { return Vector2(x + v.x, y + v.y); };
     inline const Vector2 operator -  (const Vector2 &v) { return Vector2(x - v.x, y - v.y); };
-    inline const Vector2 operator *  (const Vector2 &v) { return Vector2(x * v.x, y * v.y); };
+    inline const float   operator *  (const Vector2 &v) { return (x * v.x + y * v.y); };
     inline const Vector2 operator /  (const Vector2 &v) { return Vector2(x / v.x, y / v.y); };
     inline const Vector2 operator *  (float v)          { return Vector2(x * v, y * v); };
     inline const Vector2 operator /  (float v)          { return Vector2(x / v, y / v); };
